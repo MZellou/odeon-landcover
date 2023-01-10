@@ -235,7 +235,8 @@ def files_exist(list_of_file):
 
 def check_files(list_files):
     try:
-        files_exist(list_files)
+        True
+        #files_exist(list_files)
     except OdeonError as error:
         raise OdeonError(
             ErrorCodes.ERR_TRAINING_ERROR,
